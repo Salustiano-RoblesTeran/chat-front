@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     if (nombreIngresado) {
-      socket = io('https://chat-back-fawn.vercel.app');
+      socket = io('https://chat-back-fawn.vercel.app/');
 
       socket.on('connect', () => setIsConnected(true));
       socket.on('disconnect', () => setIsConnected(false));
