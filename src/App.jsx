@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     if (nombreIngresado) {
-      socket = io('http://localhost:3000');
+      socket = io('https://chatealo-simpleback.netlify.app');
 
       socket.on('connect', () => setIsConnected(true));
       socket.on('disconnect', () => setIsConnected(false));
